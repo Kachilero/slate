@@ -1,0 +1,5 @@
+<% wrap_layout :layout do %>
+  <%= current_page.data.includes && current_page.data.includes.each do |include| %>
+    <% partial "include/#{include}" %>
+  <% end %>
+<% end %>
